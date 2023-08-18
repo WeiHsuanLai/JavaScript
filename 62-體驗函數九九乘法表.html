@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    span{
+                              display: inline-block;
+                              width: 50px;
+                              padding: 5px 10px;
+                              border: 1px solid pink;
+                              margin: 4px;
+                              border-radius: 5px;
+                              box-shadow: 2px 2px 2px pink;
+                              color: palevioletred;
+                              
+                    }
+          </style>
+</head>
+<body>
+          <script>
+                    //聲明
+                    function sheet99()
+                    {
+                              //外層控制行數
+                              for(let i=1;i<=9;i++)
+                              {
+                                        //內層控制列數
+                                        for(let a=1;a<=i;a++){
+                                                  document.write('<span>'+a+'*'+i+'='+(i*a)+'</span>')
+                                        }
+                                        //換行
+                                        document.write('<br>')
+                              }   
+                    }
+
+                    //調用
+                    let n = prompt('請輸入多少99乘法表')
+                    for(let i=1; i<=n;i++)
+                    {
+                              sheet99()
+                    }
+                    //函數不調用是無法執行的
+          </script>
+</body>
+</html>
