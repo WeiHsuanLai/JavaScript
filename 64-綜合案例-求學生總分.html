@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+          </style>
+</head>
+<body>
+          <script>
+                    // 需求:學生的分數是一個數組,計算每個學生的總分
+                    // 分析:
+                    // ①: 封裝一個求和函數
+                    // ②: 傳遞過去的參數是一個數組
+                    // ③: 函數內部遍歷數組求和
+                    
+
+                    function getXY(arr = [])
+                    {
+                              // let stu = +prompt('幾位學生')
+                              // let arr = []
+                              // for(i=1;i<=stu;i++){
+                              //           let num = +prompt('學生分數')
+                              //           arr.push(num)
+                              // }
+                              let sum = 0
+                              for(let i=0;i<arr.length;i++)
+                              {
+                                        sum += arr[i]
+                              }
+                              document.write(sum+'<br>') 
+                    }
+                    getXY([1,2,3,4])
+                    getXY([5,6,7,8])
+                    getXY()
+          </script>
+</body>
+</html>
