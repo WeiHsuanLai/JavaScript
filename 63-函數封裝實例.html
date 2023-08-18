@@ -5,25 +5,18 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <style>
-                    span{
-                              display: inline-block;
-                              width: 50px;
-                              padding: 5px 10px;
-                              border: 1px solid pink;
-                              margin: 4px;
-                              border-radius: 5px;
-                              box-shadow: 2px 2px 2px pink;
-                              color: palevioletred;
-                              
-                    }
           </style>
 </head>
 <body>
           <script>
                     //聲明
-                    function getSum()
+                    function getSum(end)
                     {
-                              
+                              let sum = 0
+                              for(let i = 1; i<=100;i++){
+                                        sum+=i
+                              }
+                              document.write(sum)
                     }
                     getSum()
           </script>
