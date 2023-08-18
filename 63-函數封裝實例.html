@@ -9,16 +9,39 @@
 </head>
 <body>
           <script>
-                    //聲明
-                    function getSum(end)
+                    //2.求1~100的值累加和
+                    // function getSum(end)
+                    // {
+                    //           let sum = 0
+                    //           for(let i = 1; i<=end;i++){
+                    //                     sum+=i
+                    //           }
+                    //           document.write(`${sum}<br>`)
+                    // }
+                    // getSum(50)
+                    // getSum(100)
+
+                    // function getSum(start,end)
+                    // //宣告的小括號裡面叫型參 形式上的參數
+                    // {
+                    //           let sum = 0
+                    //           for(let i = start; i<=end;i++){
+                    //                     sum+=i
+                    //           }
+                    //           document.write(`${sum}<br>`)
+                    // }
+                    // getSum(1,50)
+                    // getSum(1,100) //調用的小括號裡面較實參 實際的參數
+                    // getSum(2,100)
+
+                    function getXY(x =0,y =0)
+                    //可給默認參數0
                     {
-                              let sum = 0
-                              for(let i = 1; i<=100;i++){
-                                        sum+=i
-                              }
-                              document.write(sum)
+                              document.write(x+y)
                     }
-                    getSum()
+                    getXY()//結果為0
+                    getXY(1,2)//結果為3
+
           </script>
 </body>
 </html>
